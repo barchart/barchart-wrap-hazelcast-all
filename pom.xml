@@ -10,7 +10,7 @@
 
 	<groupId>com.barchart.wrap</groupId>
 	<artifactId>barchart-wrap-hazelcast-all</artifactId>
-	<version>2.4.0-build006</version>
+	<version>2.4.0-build007-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<scm>
