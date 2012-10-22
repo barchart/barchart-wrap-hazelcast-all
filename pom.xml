@@ -33,18 +33,18 @@
 
 	<dependencies>
 
-		<!-- -->
 		<dependency>
 			<groupId>com.hazelcast</groupId>
-			<artifactId>hazelcast-all</artifactId>
+			<artifactId>hazelcast</artifactId>
 			<version>${hazelVersion}</version>
 			<optional>true</optional>
-			<exclusions>
-				<!-- <exclusion> -->
-				<!-- <groupId>com.jcraft</groupId> -->
-				<!-- <artifactId>jsch</artifactId> -->
-				<!-- </exclusion> -->
-			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.hazelcast</groupId>
+			<artifactId>hazelcast-client</artifactId>
+			<version>${hazelVersion}</version>
+			<optional>true</optional>
 		</dependency>
 
 	</dependencies>
