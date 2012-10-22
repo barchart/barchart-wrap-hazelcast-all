@@ -9,5 +9,5 @@ log/
 logs/
 target/
 
-release.properties
-pom.xml.releaseBackup
+release.*
+pom.xml.*
