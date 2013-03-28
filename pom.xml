@@ -17,7 +17,7 @@
 		<url>https://github.com/barchart/barchart-wrap-hazelcast-all</url>
 		<connection>scm:git:git://github.com/barchart/barchart-wrap-hazelcast-all.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/barchart/barchart-wrap-hazelcast-all.git</developerConnection>
-		<tag>barchart-wrap-hazelcast-all-2.5.0-build002</tag>
+		<tag>master</tag>
 	</scm>
 
 	<description>
