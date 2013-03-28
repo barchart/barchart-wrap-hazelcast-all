@@ -18,7 +18,6 @@
 		<url>https://github.com/barchart/barchart-wrap-hazelcast-all</url>
 		<connection>scm:git:git://github.com/barchart/barchart-wrap-hazelcast-all.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/barchart/barchart-wrap-hazelcast-all.git</developerConnection>
-		<tag>HEAD</tag>
 	</scm>
 
 	<description>
@@ -37,6 +36,13 @@
 		<dependency>
 			<groupId>com.hazelcast</groupId>
 			<artifactId>hazelcast</artifactId>
+			<version>${hazelVersion}</version>
+			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>com.hazelcast</groupId>
+			<artifactId>hazelcast-cloud</artifactId>
 			<version>${hazelVersion}</version>
 			<optional>true</optional>
 		</dependency>
