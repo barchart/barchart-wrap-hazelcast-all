@@ -10,7 +10,7 @@
 
 	<groupId>com.barchart.wrap</groupId>
 	<artifactId>barchart-wrap-hazelcast-all</artifactId>
-	<version>2.5.0-build003-SNAPSHOT</version>
+	<version>2.5.0-build002-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<scm>
@@ -116,20 +116,24 @@
 				</executions>
 			</plugin>
 
-			<!-- attach javadoc jar -->
-			<!-- <plugin> -->
-			<!-- <groupId>org.apache.maven.plugins</groupId> -->
-			<!-- <artifactId>maven-javadoc-plugin</artifactId> -->
-			<!-- <executions> -->
-			<!-- <execution> -->
-			<!-- <id>attach-javadocs</id> -->
-			<!-- <phase>prepare-package</phase> -->
-			<!-- <goals> -->
-			<!-- <goal>jar</goal> -->
-			<!-- </goals> -->
-			<!-- </execution> -->
-			<!-- </executions> -->
-			<!-- </plugin> -->
+			<!-- disable javadoc jar - hazelcast uses invalid annotations, which blow 
+				up in com.sun.tools.* -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<phase>invalid</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 
 			<!-- produce bundle -->
 			<plugin>
